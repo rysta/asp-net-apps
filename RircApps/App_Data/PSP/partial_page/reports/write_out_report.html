@@ -1,0 +1,53 @@
+<!-- Блок для отчёта "Все выписанные за период" -->
+<div id="report_write_out">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/PSP/Home/Index">Главное меню</a></li>
+            <li class="active">Все выписанные за период</li>
+        </ol>
+        <div class="page-header">
+            <h4>Отчёт: "Все выписанные за период"</h4></div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form role="form">
+                    <div class="row">
+                        <label class="col-md-6 control-label">Введите период за который требуется отобразить снятых с регистрации</label>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="inputDateFN_from_write_out" class="col-md-1 control-label">Дата с</label>
+                        <div class="col-md-3">
+                            <input type="date" class="form-control" id="inputDateFN_from_write_out" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                        <label for="inputDateSM" class="col-md-1 control-label">Дата по</label>
+                        <div class="col-md-3">
+                            <input type="date" class="form-control" id="inputDateFN_before_write_out" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-10">
+                            <br />
+                            <button type="button" id="search_write_out" class="btn btn-default">Выполнить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="table_for_report">
+            <div class="page-header">
+                <h4>Результат запроса:</h4>
+            </div>
+            <div class="col-md-offset-10">
+                <button type="button" id="export_to_excel" class="btn btn-info">Сохранить в Excel</button>
+            </div>
+            <br />
+                <div class="panel panel-default" style="font-size: 9pt">
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

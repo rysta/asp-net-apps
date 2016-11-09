@@ -1,0 +1,66 @@
+<!-- Блок для отчёта "Все выбывшие военнообязанные за период" -->
+<div id="report_drop_out_military">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/PSP/Home/Index">Главное меню</a></li>
+            <li class="active">Все выбывшие военнообязанные за период</li>
+        </ol>
+        <div class="page-header">
+            <h4>Отчёт: "Все выбывшие военнообязанные за период"</h4></div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="row">
+                        <label class="col-md-4 control-label">Введите даты рождения военнообязанных лиц</label>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="inputDateRD_from_drop_out_military" class="col-md-2 control-label">Дата рождения с</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="inputDateRD_from_drop_out_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                        <label for="inputDateRD_before_drop_out_military" class="col-md-2 control-label">Дата рождения по</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="inputDateRD_before_drop_out_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-7">Введите период за который требуется отобразить выбывших военнообязанных</label>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="inputDateST_from_drop_out_military" class="col-md-2 control-label">Дата с</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="inputDateST_from_drop_out_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                        <label for="inputDateST_before_drop_out_military" class="col-md-2 control-label">Дата по</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="inputDateST_before_drop_out_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-10">
+                            <button id="search_drop_out_military" type="button" class="btn btn-default">Выполнить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="table_for_report">
+            <div class="page-header">
+                <h4>Результат запроса:</h4>
+            </div>
+            <div class="col-md-offset-10">
+                <button type="button" id="export_to_excel" class="btn btn-info">Сохранить в Excel</button>
+            </div>
+            <br />
+            <div class="panel panel-default" style="font-size: 9pt">
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

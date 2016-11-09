@@ -1,0 +1,85 @@
+<!-- Блок для отчёта "Все выписанные за период" -->
+<div id="report_strength_change">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/PSP/Home/Index">Главное меню</a></li>
+            <li class="active">Изменение численного состава жильцов</li>
+        </ol>
+        <div class="page-header">
+            <h4>Отчёт: "Изменение численного состава жильцов"</h4>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form role="form">
+                            <div class="row">
+                                <label class="col-md-12 control-label">Введите период за который будут отбираться изменения</label>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label for="inputDateFN_from_strength_change" class="col-xs-2 control-label">Дата с</label>
+                                <div class="col-xs-4">
+                                    <input type="date" class="form-control" id="inputDateFN_from_strength_change" placeholder="ДД.ММ.ГГГГ">
+                                </div>
+                                <label for="inputDateFN_before_strength_change" class="col-xs-2 control-label">Дата по</label>
+                                <div class="col-xs-4">
+                                    <input type="date" class="form-control" id="inputDateFN_before_strength_change" placeholder="ДД.ММ.ГГГГ">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <br />
+                        <div id="panel_du"  class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <label class="col-md-12 control-label">Выберите управляющие организации</label>
+                                </div>
+                                <div id="du">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-10">
+                        <button type="button" id="search_strength_change" class="btn btn-default">Выполнить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="table_for_report">
+            <div class="page-header">
+                <h4>Результат запроса:</h4>
+            </div>
+            <div class="col-md-offset-10">
+                <button type="button" id="export_to_excel" class="btn btn-info">Сохранить в Excel</button>
+            </div>
+            <br />
+            <div class="panel panel-default" style="font-size: 9pt">
+                <div class="panel-body">
+
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#panel1">Зарегистрированные в заданный период</a></li>
+                        <li><a data-toggle="tab" href="#panel2">Снятые с регистрации в заданный период</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="panel1" class="tab-pane fade in active">
+                            <div class="table-responsive">
+                                <table class="table table-hover"></table>
+                            </div>
+                        </div>
+                        <div id="panel2" class="tab-pane fade">
+                            <div class="table-responsive">
+                                <table class="table table-hover"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

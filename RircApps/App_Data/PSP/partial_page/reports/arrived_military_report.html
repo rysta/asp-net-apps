@@ -1,0 +1,69 @@
+<!-- Блок для отчёта "Все прибывшие военнообязанные за период" -->
+<div id="report_arrived_military">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/PSP/Home/Index">Главное меню</a></li>
+            <li class="active">Все прибывшие военнообязанные за период</li>
+        </ol>
+        <div class="page-header">
+            <h4>Отчёт: "Все прибывшие военнообязанные за период"</h4>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form role="form">
+                    <div class="row">
+                        <label class="col-md-4 control-label">Введите даты рождения военнообязанных лиц</label>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="inputDateRD_from_arrived_military" class="col-md-2 control-label">Дата рождения с</label>
+                        <div class="col-md-3">
+                            <input type="date" class="form-control" id="inputDateRD_from_arrived_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                        <label for="inputDateRD_before_arrived_military" class="col-md-2 control-label">Дата рождения по</label>
+                        <div class="col-md-3">
+                            <input type="date" class="form-control " id="inputDateRD_before_arrived_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <label class="col-md-7">Введите период за который требуется отобразить прибывших военнообязанных</label>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label for="inputDateST_from_arrived_military" class="col-md-2 control-label">Дата с</label>
+                        <div class="col-md-3">
+                            <input type="date" class="form-control" id="inputDateST_from_arrived_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                        <label for="inputDateST_before_arrived_military" class="col-md-2 control-label ">Дата по</label>
+                        <div class="col-md-3">
+                            <input type="date" class="form-control " id="inputDateST_before_arrived_military" placeholder="ДД.ММ.ГГГГ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-10">
+                             <br />
+                            <button type="button" id="search_arrived_military" class="btn btn-default">Выполнить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="table_for_report">
+            <div class="page-header">
+                <h4>Результат запроса:</h4>
+            </div>
+            <div class="col-md-offset-10">
+                <button type="button" id="export_to_excel" class="btn btn-info">Сохранить в Excel</button>
+            </div>
+            <br />
+            <div class="panel panel-default" style="font-size: 9pt">
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

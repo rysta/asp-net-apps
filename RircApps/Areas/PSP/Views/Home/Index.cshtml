@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSP</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">RIRC Apps</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/PSP/Home/Index">PSP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="container theme-showcase" role="main">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="panel panel-default">Отчёты</label>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" id="write_out" class="list-group-item">Все выписанные за период</a>
+                                <a href="#" id="arrived_military" class="list-group-item">Все прибывшие военнообязанные</a>
+                                <a href="#" id="drop_out_military" class="list-group-item">Все выбывшие военнообязанные</a>
+                                <a href="#" id="strenght_change" class="list-group-item">Изменение численного состава</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="panel panel-default">Администрирование</label>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="list-group">
+                                <a href="#" id="del_person_registration" class="list-group-item">Удаление человека из карточки</a>
+                                <a href="#" id="del_kard_registration" class="list-group-item">Удаление карточки</a>
+                                @* TO DO <a href="#" id="del_house" class="list-group-item">Удаление дома</a>*@
+                                <a href="#" id="change_flat" class="list-group-item">Изменение номера помещения</a>
+                                <a href="#" id="add_ovd" class="list-group-item">Добавление новой записи "кем выдан"</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="child_body">
+
+            </div>
+        </div>
+    <div id="ajax-loader" style="position: fixed; left: 48%; top: 50%;
+                                 z-index:50000; padding:2px;
+                                 border: 1px solid #ccc;
+                                 border-radius:4px; background-color:#fff;">
+        <img src="~/Content/images/loader_pretens.gif">
+    </div>
+    <!--Окно для вывода ошибок-->
+    <div class="modal fade" id="errorWindow" tabindex="-1" role="dialog" aria-labelledby="ErrorLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" id="upper_close_error_window" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Внимание! Ошибка приложения</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="errorMsg" class="alert alert-danger alert-dismissible fade in">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="close_error_window" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Окно для подтверждения удаления услуги-->
+    <div class="modal fade bs-example-modal-sm" id="confirm_win" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Вы действительно хотите произвести удаление?</h4>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">НЕТ</button>
+                        <button type="button" id="confirm" class="btn btn-success">&nbsp&nbspДА&nbsp&nbsp</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-2.2.2.min.js"></script>
+    <script src="~/Scripts/inputmask.min.js"></script>
+    <script src="~/Scripts/jquery.inputmask.min.js"></script>
+    <script src="~/Scripts/jquery.inputmask.bundle.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Areas/PSP/Scripts/main_app.js"></script>
+</body>
+</html>

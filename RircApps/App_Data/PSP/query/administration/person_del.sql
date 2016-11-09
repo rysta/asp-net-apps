@@ -1,0 +1,1 @@
+SELECT psp.del_chel(:p_chel)

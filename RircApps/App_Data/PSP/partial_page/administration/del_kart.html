@@ -1,0 +1,65 @@
+<!-- Блок для формы "Удаление регистрации человека"" -->
+<div id="del_kart">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/PSP/Home/Index">Главное меню</a></li>
+            <li class="active">Удаление карточки</li>
+        </ol>
+        <div class="page-header">
+            <h4>Администрирование: "Удаление карточки"</h4>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-5">
+                        <form role="form">
+                            <div class="row">
+                                <label class="col-md-12 control-label">Введите регистрационный номер карточки</label>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label for="input_kart_id" class="col-md-4 control-label">Карточка №</label>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="input_kart_id">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-10">
+                        <button type="button" id="search" class="btn btn-default">Поиск</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kart_info">
+            <div class="page-header">
+                <h4>Внимание! Проверьте данные:</h4>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <label class="col-md-12 control-label">Информация о удаляемой записи:</label>
+                            <h2><span id="del_succes" class="col-md-12 label label-success">Карточка успешно удалёна из системы.</span></h2>
+                        </div>
+                        <br />
+                        <table id="person_table" class="table table-striped">
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-offset-10">
+                <button type="button" id="del_kart_btn" class="btn btn-danger">Удалить</button>
+            </div>
+        </div>
+    </div>
+</div>

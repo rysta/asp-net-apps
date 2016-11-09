@@ -1,0 +1,102 @@
+<!-- Блок для формы "Изменение номера помещения"" -->
+<div id="change_flat_num">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/PSP/Home/Index">Главное меню</a></li>
+            <li class="active">Изменение номера помещения</li>
+        </ol>
+        <div class="page-header">
+            <h4>Администрирование: "Изменение номера помещения"</h4>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-5">
+                        <form role="form">
+                            <div class="row">
+                                <label class="col-md-12 control-label">Введите номер карточки</label>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <label for="inputKartId" class="col-md-4 control-label">Карточка №</label>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="inputKartId">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-10">
+                        <button type="button" id="search" class="btn btn-default">Поиск</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flat_info">
+            <div class="page-header">
+                <h4>Внимание! Проверьте данные:</h4>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <label class="col-md-12 control-label">Информация о изменяемой записи:</label>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-2"></div>
+                            <label for="kartIdInfo" class="col-md-2 control-label">Карточка №</label>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="kartIdInfo" readonly>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-2"></div>
+                            <label for="addres" class="col-md-2 control-label">Адрес</label>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="addres" readonly>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-2"></div>
+                            <label for="flatInfo" class="col-md-2 control-label">№ помещения</label>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="flatInfo" readonly>
+                            </div>
+                        </div>
+                        <br />
+                    </form>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <h2><span id="change_succes" class="col-md-12 label label-success">Номер помещения успешно изменён.</span></h2>
+                        </div>
+                        <div class="row">
+                            <br />
+                            <div class="col-md-2"></div>
+                            <label for="newFlat" class="col-md-2 control-label">Новый номер</label>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="newFlat">
+                            </div>
+                            <div class="col-md-offset-10">
+                                <button type="button" id="change_flat_btn" class="btn btn-danger">Изменить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
